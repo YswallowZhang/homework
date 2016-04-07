@@ -1,0 +1,85 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+h2 {
+	text-align: center;
+}
+.content {
+	margin: 0 auto;
+	width: 440px;
+	height: 220px;
+	position: relative;	
+	border-radius: 10px;
+	overflow: hidden;
+}
+.contImg {
+	width: 400%;
+	height: 220px;
+	border-radius: 10px;	
+	float: left;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease-in 0s;
+	font-size: 0;
+}
+.imghh {
+	float: left;
+}
+.imgLi {	
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 320px;
+}
+.imgLi li {
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.play {
+	margin: 0 auto;
+	position: relative;	
+	border-radius: 10px;
+	overflow: hidden;
+	width: 260px;
+	height: 248px;
+}
+.divImg {
+    width: 300%;
+	height: 248px;
+	border-radius: 5px;	
+	float: left;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease-in 0s;
+	font-size: 0;
+}
+.black {
+    background-color: rgba(0,0,0,0.74);
+    height: 24px;
+    width: 260px;
+	line-height: 24px;
+	text-align: center;
+	position: absolute;
+    margin-top:224px;
+    border-radius: 3px;
+}
+.blackDiv {
+	display: inline-block;
+	width: 13px;
+	height: 7px;
+	background-color: #fff;
+	cursor: pointer;
+	-webkit-transition: width ease-in 0.3s;
+	border-radius: 3px;
+}
+.blackDiv:hover {
+	width: 30px;
+	background-color: #f25d8e;
+}
