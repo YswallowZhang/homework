@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation-play-state</title>
+	<style>
+	#dot,#dot1 {
+		position: absolute;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		top:-20px;
+		border-radius: 50%;
+		background-color: #389;
+		-webkit-animation-play-state: paused;
+	}
+	#dot{left:0}
+	#dot1{right:0}
+	#dot.animate {
+		left:300px;
+		-webkit-animation:fadeIn 2s, float 2s 2s infinite;
+		-webkit-animation-play-state: running;
+		/*-webkit-animate: shake 4s 2s both infinite paused;  简写在IE10/11中会挂掉*/
+	}
+	#dot1.animate {
+		top:450px;
+		-webkit-animation:fadeInr 1.5s, floatr 3s 1.5s infinite;
+		-webkit-animation-play-state: running;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {opacity: 0; top:0; left:0;}
+		100% {opacity: 1; top:400px; left:300px;}
+	}
+	@-webkit-keyframes float {
+		0% {top: 400px}
+		45% {top: 370px}
+		100% {top: 400px}
+	}
+
+	@-webkit-keyframes fadeInr {
+		0% {opacity: 0; top:0; right:0;}
+		100% {opacity: 1; top:450px; right:300px;}
+	}
+	@-webkit-keyframes floatr {
+		0% {right: 300px}
+		60% {right: 350px}
+		100% {right: 300px}
+	}
+	</style>
+</head>
+
+<body>
+<a href="javascript:void(0);" onclick="start();" id="start">start</a>
+<a  href="javascript:void(0);" onclick="stop();" id="stop" style="display:none">stop</a>
+
+<div id="dot"></div>
+<div id="dot1"></div>
+
+<script>
+function start() {
+	var dot = document.getElementById("dot"),
+		dot1 = document.getElementById("dot1"),
+		start = document.getElementById("start"),
+		stop = document.getElementById("stop");
+
+	start.style.display = "none";
+	stop.style.display = "block";
+
+	dot.setAttribute("class","animate");
+	dot1.setAttribute("class","animate");
+}
+
+function stop() {
+	var dot = document.getElementById("dot"),
+		dot1 = document.getElementById("dot1"),
+		start = document.getElementById("start"),
+		stop = document.getElementById("stop");
+
+	start.style.display = "block";
+	stop.style.display = "none";
+
+	dot.removeAttribute("class");
+	dot1.removeAttribute("class");
+}
+</script>
+</body>
+</html
