@@ -1,0 +1,438 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+header {
+	background-color: #d5534c;
+	width: 720px;
+	height: 56px;
+	margin: 0 auto;
+	color: #fff;
+}
+header p {
+	font-size: 20px;
+	display: inline-block;
+	line-height: 14px;
+	margin-left: 32px;
+}
+header span {
+	font-size: 16px;
+	padding-left: 5px;
+}
+.cont {
+	width: 720px;
+	margin: 0 auto;
+	height: 765px;
+}
+.leftCont {
+	background-color: #282d30;
+	width: 110px;
+	height: 765px;
+	float: left;
+}
+.leftCont li {
+	height: 47px;
+	width: 110px;
+	text-align: center;
+	cursor: pointer;
+}
+.leftCont li a {
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
+	height: 47px;
+	line-height: 47px;
+	width: 110px;
+	position: relative;
+}
+#music { 
+	width: 22px;
+	height: 22px;
+	line-height: 47px;
+	padding-right: 7px;
+	margin-left: -10px;
+	display: inline-block;
+	background: url(./images/music.png) no-repeat 0 5px;
+}
+#up {
+	background: url(./images/up.png) no-repeat 2px 5px;
+	width: 19px;
+	height: 19px;
+	margin-left: -10px;
+	line-height: 47px;
+	padding-right: 7px;
+	display: inline-block;
+}
+#data {
+	background: url(./images/data.png) no-repeat 2px 5px;
+	width: 22px;
+	height: 22px;
+	line-height: 46px;
+	padding-right: 7px;
+	margin-left: -10px;
+	display: inline-block;
+}
+#install {
+	background: url(./images/install.png) no-repeat 2px 6px;
+	width: 19px;
+	height: 19px;
+	line-height: 47px;
+	padding-right: 7px;
+	margin-left: -10px;
+	display: inline-block;
+}
+#sound {
+	background: url(./images/sound.png) no-repeat 2px 5px;
+	width: 19px;
+	height: 19px;
+	line-height: 46px;
+	padding-right: 7px;
+	margin-left: -10px;
+	display: inline-block;
+}
+.slip {
+	height: 46px;
+	width: 5px;
+	background-color: #d54d46;
+	position: absolute;
+	margin-left: 105px;
+	display: none;
+}
+#slipa {
+	height: 58px;
+	padding-top: 8px;
+}
+#slipper {
+	display: block;
+	height: 58px;
+}
+#ulier {
+	background-color: #1d2125;
+	height: 58px;
+}
+.upload {
+	width: 89px;
+	height: 89px;
+}
+.rightCont {
+	width: 609px;
+	height: 764px;
+	float: right;
+}
+.rightCont p {
+	font-size: 15px;
+}
+.rightCont span {
+	font-size: 13px;
+	margin-right: 18px;
+	color: #000;
+}
+.frameLeft {
+	padding-left: 29px;
+	width: 232px;
+	float: left;
+}
+.frameWrite {
+	width: 155px;
+	height: 24px;	
+	border-radius: 5px;
+	border:1px solid #e8e8e8;
+	background-color: #fff;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.frameLeft input {
+	width: 144px;
+	height: 20px;
+	border:0;
+	display: inline-block;
+	margin: 0px 0 4px 9px;
+	outline:medium;
+	font-family: "Microsoft YaHei";
+}
+#upload {
+	width: 89px;
+	height: 89px;
+	display: block;
+	margin:  0 auto;
+	margin-bottom: 19px;
+}
+
+#file {
+	position: absolute;
+	opacity:0;	
+	width: 162px;
+	height: 27px;
+	display: block;
+	margin-top: -26px;
+	margin-left: 0;
+	cursor: pointer;
+}
+#chooseName {
+	width: 100px;
+	height: 17px;
+	border:none;
+	outline: medium;
+}
+#exit,
+#exitA,
+#exitB {
+	float: left;
+	height: 24px; 
+	font-size: 10px; 
+	line-height: 24px;
+	color:#c6c6c6;
+	font-style: normal;
+}
+#frameFile {
+    width: 136px;	
+	position: relative;
+	display: inline-block;
+	height: 22.5px;
+	border-right: none;
+	border-radius: 5px 0 0px 5px;
+	margin-bottom: 0;
+}
+#frameFile img {
+	position: absolute;
+	margin-left: 25px;
+	margin-top: -1.5px;
+	display: inline-block;
+	height: 25px;
+	overflow: hidden;
+}
+#but {
+	width: 74px;
+	height: 28px;
+	background-color: #d54d46;
+	outline:medium;
+	border:none;
+	float: right;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.frameRight {
+	width: 310px;
+	float: right;
+}
+.box {
+	width: 264px;
+	height: 95px;
+	border:1px solid #e8e8e8;
+	margin-bottom: 18px;
+}
+#framefile {
+	width: 145px;	
+	position: relative;
+	display: inline-block;
+	height: 22.5px;
+	margin-top: 12px;
+	border-right: none;
+	border:1px solid #e8e8e8;
+	border-radius: 5px 0 0px 5px;
+	background-color: #fff;
+}
+#choosenameA {
+	width: 135px;
+	height: 17px;
+	border:0;
+	display: inline-block;
+	margin: 0px 0 4px 9px;
+	outline:medium;
+}
+#choosenameB {
+	width: 135px;
+	height: 17px;
+	border:0;
+	display: inline-block;
+	margin: 0px 0 4px 9px;
+	outline:medium;
+}
+#fileA {
+	position: absolute;
+	opacity:0;	
+	width: 169px;
+	height: 24px;
+	display: block;
+	margin-top: -26px;
+	margin-left: 0;
+	cursor: pointer;
+}
+#fileB {
+	position: absolute;
+	opacity:0;	
+	width: 169px;
+	height: 24px;
+	display: block;
+	margin-top: -26px;
+	margin-left: 0;
+	cursor: pointer;
+}
+#framefile img {
+	position: absolute;
+	margin-top: 0;
+	display: inline-block;
+	margin-top: -1.5px;
+	height: 25px;
+	overflow: hidden;
+}
+.box span {
+	font-size: 13px;
+	margin-left: 12px;
+	margin-right: 12px;
+	color: #000;
+	display: inline-block;
+}
+.box select {
+	width: 141px;
+	height: 25px;
+	border:1px solid #e8e8e8;
+	outline: medium;
+	border-radius: 5px;
+	-webkit-appearance:none;
+	background:url(./images/pull.png) no-repeat 122px 8.5px;
+	padding-right: 14px;
+}
+.add {
+	width: 264px;
+	height: 95px;
+	background-color: #f8f8f8;
+	border:1px dashed #e8e8e8;
+	display: inline-block;
+	line-height: 95px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.or {
+	display: block;
+	float: left;
+}
+.add img {
+	display: inline-block;
+}
+.size {
+	display:  block; 
+	height: 24px; 
+	font-size: 10px; 
+	line-height: 24px;
+	color:#c6c6c6;
+	font-style: normal;
+}
+#sizeA,
+#sizeB {
+	margin-left: 12px;
+}
+.navfoot {
+	clear: both;
+	float: left;
+	height: 345px;
+	overflow: hidden;
+}
+.navfoot p {
+	padding-left: 29px;
+}
+.program {
+	background-color: #eeeded;
+	width: 581px;
+	height: 30px;
+	overflow: hidden;
+}
+.programUl {
+	background-color: #fff;
+	width: 581px;
+	height: 30px;
+	overflow: hidden;
+	border-bottom: 1px solid #eeeded;
+}
+.navli {
+	float: left;
+	width: 108px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+}
+.near {
+	text-align: left;
+	float: left;
+	width: 108px;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 29px;
+}
+.navli img {
+	cursor: pointer;
+}
+.programMore{
+	width: 581px;
+	background-color: #f8f8f8;
+	height: 30px;
+	border-bottom: 1px solid #eeeded;
+}
+
+.musicname {
+	text-align: left;
+	font-size: 12px;
+	float: left;
+	width: 183px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 29px;
+}
+.singer {
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	width: 183px;
+	height: 30px;
+	line-height: 30px;
+}
+.howmany {
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	width: 183px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: none;
+}
+footer {
+	float: left;
+	width: 610px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+}
+footer li {
+	float: left;
+	width: 26px;
+	margin-right: 12px;
+	font-size: 12px;
+	cursor: pointer;
+}
+#turnleft {
+	margin-left: 172px;
+}
+.fourcircle {
+	background:url(./images/circle.png) no-repeat center center;
+}
+#circledef {
+	background:url(./images/red.png) no-repeat center center;
+	color: #fff;
+}

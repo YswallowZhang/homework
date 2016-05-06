@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <header>
+  	<p>重邮点歌台</p>
+  	<span>|</span>
+  	<span>管理后台</span>
+  </header>
+  <div class="cont">
+	  <div class="leftCont">
+	  	<ul>
+	  		<li class="uli" id="ulier"> 			
+	  			<div class="slip" id="slipper"></div><a href="##" id="slipa"><span id="music"></span><span>歌曲管理</span></a>
+	  		</li>
+	  		<li class="uli">
+	  			<a href="##"><div class="slip"></div><span id="sound"></span><span>公告管理</span></a>
+	  		</li>
+	  		<li class="uli">
+	  			<a href="##"><div class="slip"></div><span id="data"></span><span>数据分析</span></a>
+	  		</li>
+	  		<li class="uli">
+	  			<a href="##"><div class="slip"></div><span id="up"></span><span>节目上传</span></a>
+	  		</li>
+	  		<li class="uli">
+	  			<a href="##"><div class="slip"></div><span id="install"></span><span>违规设置</span></a>
+	  		</li>
+	  	</ul>
+	  </div> 	
+	  <div class="rightCont">
+	  	<div class="navwrap">
+	  		<form>
+	  		  <div class="frameLeft">
+	  		  	<p>整期节目</p>
+	  			<input type="image" src="images/upload.png" id="upload"></input>
+	  			<span>节目名称</span><div class="frameWrite"><input></input></div>
+	  			<span>主播信息</span><div class="frameWrite"><input></input></div>
+	  			<span>播出时间</span><div class="frameWrite"><input type="date" id="datehh"></input></div>
+	  			<span>整期节目</span><div id="frameFile" class="frameWrite"><input  id="chooseName"><img src="images/choose.png"></input><input type="file" id="file" onChange="if(this.value)insert(this.value);"></input></div>
+	  			<span id="exit">文件大小：</span><i class="size"></i>
+	  			<button id="but">上传</button>
+	  		  </div>
+	  		  <div class="frameRight">
+	  			<p>包含歌曲</p>
+	  			<div class="box">
+	  				<span>选择歌曲</span><div id="framefile"><input id="choosenameA"><img src="images/choose.png"></input><input type="file" id="fileA" onChange="if(this.value)insertA(this.value);"></input></div>
+	  				<span id="exitA">文件大小：</span><i class="size" id="sizeA"></i>
+	  				<span>选择最近点播</span>
+	  				<select>
+	  					<option></option>
+	  				</select>	  				
+	  			</div>
+	  			<div class="box">
+	  				<span>选择歌曲</span><div id="framefile"><input id="choosenameB"><img src="images/choose.png"></input><input type="file" id="fileB"  onChange="if(this.value)insertB(this.value);"></input></div>
+	  				<span id="exitB">文件大小：</span><i class="size" id="sizeB"></i>
+	  				<span>选择最近点播</span>
+	  				<select>
+	  					<option></option>
+	  				</select>	  				
+	  			</div>
+	  			<div class="add">
+	  		  		<img src="images/addbut.png">
+	  			</div>
+	  		  </div>
+	  		</form>
+	  		<div class="navfoot">
+	  			<p>往期节目</p>
+	  			<ul class="program">
+	  				<li class="near">节目名称</li>
+	  				<li class="navli">主播信息</li>
+	  				<li class="navli">播出时间</li>
+	  				<li class="navli">文件大小</li>
+	  				<li class="navli">所含歌曲</li>
+	  			</ul>
+	  			<ul class="programUl">
+	  				<li class="near" >新学期迎新</li>
+	  				<li class="navli">小二黑</li>
+	  				<li class="navli">2016-02-01</li>
+	  				<li class="navli">22.2M</li>
+	  				<li class="navli"><img src="images/on.png"  class="onall"></li>	
+	  				<div class="or">
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  			</div>
+	  			</ul>
+	  		
+	  			<ul class="programUl">
+	  				<li class="near" >运动会</li>
+	  				<li class="navli">大三白</li>
+	  				<li class="navli">2015-11-12</li>
+	  				<li class="navli">33.3M</li>
+	  				<li class="navli"><img src="images/on.png" class="onall"></li>
+	  				<div class="or">
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  				<ul class="programMore">
+		  					<li class="musicname">歌曲名：相依为命</li>
+		  					<li class="singer">演唱者：陈小春</li>
+		  					<li class="howmany">文件大小：2.4M</li>
+		  				</ul>
+		  			</div>
+	  			</ul>
+	  			<ul class="programUl">
+	  				<li class="near" >新学期迎新</li>
+	  				<li class="navli">小二黑</li>
+	  				<li class="navli">2016-02-01</li>
+	  				<li class="navli">22.2M</li>
+	  				<li class="navli"><img src="images/on.png" class="onall"></li>
+	  			</ul>
+	  			<ul class="programUl">
+	  				<li class="near" >运动会</li>
+	  				<li class="navli">大三白</li>
+	  				<li class="navli">2015-11-12</li>
+	  				<li class="navli">33.3M</li>
+	  				<li class="navli"><img src="images/on.png" class="onall"></li>
+	  			</ul>
+	  			<ul class="programUl">
+	  				<li class="near" >新学期迎新</li>
+	  				<li class="navli">小二黑</li>
+	  				<li class="navli">2016-02-01</li>
+	  				<li class="navli">22.2M</li>
+	  				<li class="navli"><img src="images/on.png" class="onall"></li>
+	  			</ul>
+	  		</div>
+	  		<footer>
+	  			<ul>
+	  				<li  id="turnleft" class="turn"><img src="images/left.png"></li>
+	  				<li class="fourcircle" id="circledef">1</li>
+	  				<li class="fourcircle">2</li>
+	  				<li class="fourcircle">3</li>
+	  				<li class="fourcircle">4</li>
+	  				<li id="turnright" class="turn"><img src="images/right.png"></li>
+	  			</ul>
+	  		</footer>
+	  	</div>
+	  </div>
+  </div>
+  <div style="height: 100px; width: 765px">
+  	
+  </div>
+
+
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
